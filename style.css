@@ -1,0 +1,66 @@
+body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to top right, #ffecd2, #fcb69f);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      padding: 40px;
+      max-width: 350px;
+      text-align: center;
+      animation: pop 0.8s ease forwards;
+      transform: scale(0.8);
+    }
+
+    @keyframes pop {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #ff6b6b;
+      margin-bottom: 10px;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    p {
+      font-size: 1.1em;
+      color: #555;
+      margin: 15px 0 30px;
+      animation: fadeIn 1.4s ease-in;
+    }
+
+    .balloons {
+      font-size: 2rem;
+      animation: float 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes float {
+      from { transform: translateY(0px); }
+      to { transform: translateY(-15px); }
+    }
+
+    .btn {
+      background: #ff6b6b;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #ff4c4c;
+    }
